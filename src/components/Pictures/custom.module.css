@@ -1,0 +1,114 @@
+.carouselInner {
+  position: absolute;
+  width: 445px;
+  height: 500px;
+  left: 213px;
+  top: 230px;
+}
+
+
+
+.lightboxPicture {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  left: 445px;
+  top: 133px;
+
+  border-radius: 15px;
+}
+
+.dImage{
+  border-radius: 10px;
+}
+.cIndicators {
+position: absolute;
+width: 445px;
+height: 88px;
+top: 680px;
+}
+
+/* Rectangle Copy */
+
+.li {
+
+    width: 445px;
+    height: 88px;
+    opacity: 0.8;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.imageWrapper > div {
+  position: absolute;
+  width: 445px;
+  height: 445px;
+  left: 213px;
+  top: 203px;
+  
+}
+.textContainer{
+  display:none;
+}
+
+​.showDiv { display: none; }​
+
+.visibility{
+  visibility: hidden;
+}
+
+  .hiddenDiv {
+    display:none;
+  }
+
+  .hidden{display:none;}
+  
+  .visible>div {
+    display:block;
+  }
+
+
+.carouselContainer{
+  
+position: absolute;
+width: 445px;
+height: 88px;
+left: 213px;
+top: 680px;
+}
+.shoes{
+  position: absolute;
+width: 88px;
+height: 88px;
+left:-80px;
+top: 720px;
+padding:5px
+}
+
+.shoes2{position: absolute;
+  width: 88px;
+  height: 88px;
+  left: 39px;
+  top: 720px;
+  padding:5px
+}
+
+.shoes3{position: absolute;
+  width: 88px;
+  height: 88px;
+  left: 158px;
+  top: 720px;
+  padding:5px
+  }
+
+  .shoes4{
+ position: absolute;
+width: 88px;
+height: 88px;
+left: 277px;
+top: 720px;
+padding:5px
+
+
+
+  }

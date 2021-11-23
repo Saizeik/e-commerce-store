@@ -1,0 +1,275 @@
+
+
+
+.container {
+  position: absolute;
+  width: 445px;
+  height: 426px;
+  left: 783px;
+  top: 265px;
+  
+}
+.companyBrand {
+  /* Sneaker Company */
+
+
+position: absolute;
+height: 13px;
+left: 0%;
+right: 0%;
+top: calc(50% - 13px/2 - 206.5px);
+
+font-family: Kumbh Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 13px;
+/* identical to box height */
+
+letter-spacing: 2px;
+text-transform: uppercase;
+
+color: #FF7E1B;
+}
+
+.shoppingCart {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 5.26%;
+  bottom: 10.53%;
+
+  background: #ffffff;
+}
+
+.title {
+  position: absolute;
+height: 96px;
+left: 0%;
+right: 0%;
+top: calc(50% - 96px/2 - 125px);
+
+font-family: Kumbh Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 44px;
+line-height: 48px;
+/* or 109% */
+
+
+color: #1D2026;
+}
+.description {
+  position: absolute;
+  height: 78px;
+  left: 0%;
+  right: 0%;
+  top: calc(50% - 78px/2 - 6px);
+  
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  
+  
+  color: #69707D;
+  
+}
+
+.cartButton {
+  position: absolute;
+width: 272px;
+height: 56px;
+left: 173px;
+top: 370px;
+
+  
+  background: #FF7E1B;
+  box-shadow: 0px 20px 50px -20px #FF7E1B;
+  border-radius: 10px;
+}
+.cartText {
+  /* Add to cart */
+
+  position: absolute;
+  height: 16px;
+  left: 27.73%;
+  right: 0%;
+  top: calc(50% - 16px / 2 + 2.5px);
+
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.containerAmounts {
+  position: absolute;
+  left: 0%;
+  right: 61.12%;
+  top: 63.38%;
+  bottom: 20.66%;
+}
+
+.price {
+  position: absolute;
+  height: 28px;
+  left: 0%;
+  right: 38.73%;
+  top: calc(50% - 28px/2 - 16px);
+  
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 28px;
+  
+  color: #1D2026;
+  
+}
+.originalAmount {
+  /* $250.00 */
+
+  position: absolute;
+  height: 26px;
+  left: 0%;
+  right: 63.58%;
+  top: calc(50% - 26px / 2 + 21px);
+
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  text-decoration-line: line-through;
+
+  color: #b6bcc8;
+}
+
+.percentContainer {
+  position: absolute;
+  left: 70.52%;
+  right: 0%;
+  top: 5.88%;
+  bottom: 54.41%;
+  background-color: #ffeee2;
+}
+.percent {
+  position: absolute;
+  height: 16px;
+  left: 15.69%;
+  right: 15.69%;
+  top: calc(50% - 16px / 2 + 1.5px);
+
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #ff7e1b;
+}
+.quantity {
+  /* 0 */
+  position: absolute;
+  height: 16px;
+  left: 46.82%;
+  right: 46.82%;
+  top: calc(50% - 16px / 2 + 3px);
+
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #1d2026;
+}
+
+.addSubContainer {
+  position: absolute;
+left: 0%;
+right: 64.72%;
+top: 86.85%;
+bottom: 0%;
+
+}
+.removeIcon {
+ color: #ffab6a;
+}
+.addIcon {
+  color: #ffab6a;
+}
+
+.badgeContainer {
+  
+
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #1d2026;
+  background-color: #F6F8FD;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.containerCart {
+  padding: 2rem;
+  text-align: center;
+}
+.header {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.header div {
+  flex: 1;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  margin-bottom: 2rem;
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.body > * {
+  flex: 1;
+}
+.image {
+  width: 100px;
+}
+.buttons > * {
+  width: 25px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 0.5rem;
+  font-size: 1rem;
+}

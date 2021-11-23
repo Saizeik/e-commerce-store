@@ -1,0 +1,32 @@
+.navbar {
+  position: absolute;
+  width: 1110px;
+  height: 50px;
+  left: 165px;
+  top: 28px;
+}
+
+.border {
+  position: absolute;
+  width: 1110px;
+  height: 1px;
+  left: 165px;
+  top: 112px;
+
+  background: #e4e9f2;
+}
+.shoppingCart {
+    position: absolute;
+    width: 21.82px;
+    height: 20px;
+    left: 1157px;
+    top: -10px;
+}
+.avatar{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 1225px;
+  top: 0px;
+  
+}
