@@ -1,12 +1,21 @@
+.galleryContainer {
+  /* Group 10 */
+
+  position: absolute;
+  width: 445px;
+  height: 565px;
+  left: 380px;
+  top: 3px;
+}
+
 .carouselInner {
+  justify-content: center;
   position: absolute;
   width: 445px;
   height: 500px;
   left: 213px;
   top: 230px;
 }
-
-
 
 .lightboxPicture {
   position: absolute;
@@ -18,25 +27,18 @@
   border-radius: 15px;
 }
 
-.dImage{
-  border-radius: 10px;
-}
-.cIndicators {
-position: absolute;
-width: 445px;
-height: 88px;
-top: 680px;
+.dImage {
+  border-radius: 15px;
 }
 
 /* Rectangle Copy */
 
 .li {
-
-    width: 445px;
-    height: 88px;
-    opacity: 0.8;
-    padding: 5px;
-    border-radius: 10px;
+  width: 445px;
+  height: 88px;
+  opacity: 0.8;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .imageWrapper > div {
@@ -45,70 +47,125 @@ top: 680px;
   height: 445px;
   left: 213px;
   top: 203px;
-  
 }
-.textContainer{
-  display:none;
+.textContainer {
+  display: none;
 }
 
-​.showDiv { display: none; }​
-
-.visibility{
+​.showDiv {
+  display: none;
+}
+​ .visibility {
   visibility: hidden;
 }
 
-  .hiddenDiv {
-    display:none;
-  }
-
-  .hidden{display:none;}
-  
-  .visible>div {
-    display:block;
-  }
-
-
-.carouselContainer{
-  
-position: absolute;
-width: 445px;
-height: 88px;
-left: 213px;
-top: 680px;
+.hiddenDiv {
+  display: none;
 }
-.shoes{
+
+.hidden {
+  display: none;
+}
+
+.visible > div {
+  display: block;
+}
+
+.carouselContainer {
+  justify-self: center;
   position: absolute;
-width: 88px;
-height: 88px;
-left:-80px;
-top: 720px;
-padding:5px
+  width: 445px;
+  height: 465px;
+  left: 600px;
+  top: 240px;
+  border-radius: 15px;
+}
+.thumbnailContainer {
+  position: absolute;
+  width: 445px;
+  height: 88px;
+  left: 690px;
+  top: 650px;
+  flex-direction: row;
 }
 
-.shoes2{position: absolute;
+.shoes {
+  position: absolute;
   width: 88px;
   height: 88px;
-  left: 39px;
-  top: 720px;
-  padding:5px
+  left: -158px;
+  top: 0%;
+
+  border-radius: 15px;
 }
 
-.shoes3{position: absolute;
+.shoes2 {
+  position: absolute;
   width: 88px;
   height: 88px;
-  left: 158px;
-  top: 720px;
-  padding:5px
+  left: -39px;
+  top: 0%;
+
+  border-radius: 15px;
+}
+
+.shoes3 {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  left: 80px;
+  top: 0%;
+
+  border-radius: 15px;
+}
+
+.shoes4 {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  left: 199px;
+  top: 0%;
+}
+/******************* MEDIA QUERY **************************/
+@media (max-width: 670px) {
+  .innerContainer {
+    width: 100%;
   }
-
-  .shoes4{
- position: absolute;
-width: 88px;
-height: 88px;
-left: 277px;
-top: 720px;
-padding:5px
-
-
-
+  .carouselContainer {
+    width: 100%;
   }
+}
+/* Tablets and under */
+@media (max-width: 768px) {
+  .innerContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .carouselContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .innerContainer {
+    height: 110px;
+    width: 300px;
+    flex-direction: column;
+  }
+  .carouselContainer {
+    height: 110px;
+    width: 300px;
+    flex-direction: column;
+  }
+  .carouselContainer {
+    position: absolute;
+    width: 400px;
+    min-width: 100px;
+    height: auto;
+    left: 0px;
+    top: 68px;
+    padding-top: 10px;
+  }
+}

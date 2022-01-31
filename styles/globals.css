@@ -14,3 +14,234 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.btn-close {
+  display: none;
+}
+.navbar-nav {
+  position: absolute;
+  width: 397px;
+  height: 26px;
+  left: 395px;
+  top: 20px;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 1.1em;
+  position: relative;
+  transition: all 0.5s;
+  border-bottom: solid 3px transparent;
+}
+.nav-link:active :hover {
+  border-bottom: solid 3px #ff7e1b;
+  padding-bottom: 55px;
+  transition: ease-in-out;
+}
+.modal-title {
+  position: relative;
+  width: 397px;
+  height: 26px;
+  left: 0px;
+  top: -10px;
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #1d2026;
+}
+
+.navbar .navbar-nav .nav-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  background-color: #ff7e1b;
+  color: transparent;
+  width: 0%;
+  content: ".";
+  height: 3px;
+}
+.navbar .navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.nav {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 50px 0;
+  box-shadow: 0px 5px 0px #dedede;
+  transition: all 0.5s;
+}
+.nav ul {
+  list-style: none;
+  text-align: center;
+  transition: all 0.5s;
+}
+.nav ul li {
+  display: inline-block;
+  transition: all 0.5s;
+}
+.nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+  transition: all 0.5s;
+}
+.nav ul li a,
+.nav ul li a:after,
+.nav ul li a:before {
+  transition: all 0.5s;
+}
+.nav ul li a:hover {
+  color: #555;
+}
+/******************* MEDIA QUERY **************************/
+@media (max-width: 670px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    padding: 3rem 0;
+    margin: 0 auto;
+    line-height: 3rem;
+  }
+  .navbar-nav {
+    position: absolute;
+    width: 397px;
+    height: 26px;
+    left: 359px;
+    top: 41px;
+  }
+}
+/* Tablets and under */
+@media (max-width: 768px) {
+  .container,
+  .companyBrand,
+  .card,
+  .description,
+  .containerAmounts,
+  .price,
+  .percentContainer,
+  .percent,
+  .originalAmount,
+  .cartbutton,
+  .cartText,
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    padding: 3rem 0;
+    margin: 0 auto;
+    line-height: 3rem;
+  }
+
+  .container {
+    height: auto;
+  }
+  .navbar-nav {
+    position: absolute;
+    width: 397px;
+    height: 26px;
+    left: 359px;
+    top: 41px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .navbar-brand {
+    position: absolute;
+    width: 137.5px;
+    height: 20px;
+    left: 56px;
+    top: 20px;
+
+    flex-direction: column;
+
+    justify-self: center;
+    align-self: center;
+    padding: 3rem 0;
+    margin: 0 auto;
+    line-height: 3rem;
+    font-weight: bold;
+    font-size:20px;
+  }
+
+  .offcanvas {
+    visibility: visible;
+    position: relative;
+    background: none;
+    border: none;
+    justify-content: end;
+    color: white;
+    /* Rectangle */
+
+    position: absolute;
+    width: 250px;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+
+    background: #ffffff;
+  }
+
+  .offcanvas-start-lg {
+    top: 0;
+    left: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%);
+  }
+  .navbar-nav {
+    position: absolute;
+    width: 95px;
+    height: 210px;
+    left: 25px;
+    top: 92px;
+  }
+  .a {
+    color: #1d2026;
+  }
+  .btn-close {
+    display: block;
+
+    position: absolute;
+    width: 13.44px;
+    height: 13.44px;
+    left: 25.28px;
+    top: 24.78px;
+
+    background: #69707d;
+  }
+
+  .modal-title{
+    /* Cart */
+
+
+position: absolute;
+height: 16px;
+left: 6%;
+right: 83.89%;
+top: 0px;
+
+font-family: Kumbh Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+
+color: #1D2026;
+  }
+}

@@ -1,98 +1,101 @@
-
-
-
 .container {
   position: absolute;
   width: 445px;
   height: 426px;
-  left: 783px;
-  top: 265px;
-  
+  left: 1160px;
+  top: 285px;
+  max-width: 100%;
 }
 .companyBrand {
   /* Sneaker Company */
 
-
-position: absolute;
-height: 13px;
-left: 0%;
-right: 0%;
-top: calc(50% - 13px/2 - 206.5px);
-
-font-family: Kumbh Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 13px;
-line-height: 13px;
-/* identical to box height */
-
-letter-spacing: 2px;
-text-transform: uppercase;
-
-color: #FF7E1B;
-}
-
-.shoppingCart {
-  position: absolute;
+  position: relative;
+  height: 13px;
   left: 0%;
   right: 0%;
-  top: 5.26%;
-  bottom: 10.53%;
+  top: calc(50% - 13px / 2 - 206.5px);
 
-  background: #ffffff;
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 13px;
+  /* identical to box height */
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #ff7e1b;
+}
+
+.shoppingWhiteCart {
+  position: absolute;
+  left: 0%;
+  right: 30%;
+  top: 0%;
+
+  fill: white;
+  outline-color: white;
+
+  color: white;
 }
 
 .title {
   position: absolute;
-height: 96px;
-left: 0%;
-right: 0%;
-top: calc(50% - 96px/2 - 125px);
+  height: 96px;
+  left: 0%;
+  right: 0%;
+  top: calc(50% - 96px / 2 - 125px);
 
-font-family: Kumbh Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 44px;
-line-height: 48px;
-/* or 109% */
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 48px;
+  /* or 109% */
 
-
-color: #1D2026;
+  color: #1d2026;
 }
 .description {
   position: absolute;
   height: 78px;
   left: 0%;
   right: 0%;
-  top: calc(50% - 78px/2 - 6px);
-  
+  top: calc(50% - 78px / 2 - 6px);
+
   font-family: Kumbh Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   /* or 162% */
-  
-  
-  color: #69707D;
-  
+
+  color: #69707d;
 }
 
 .cartButton {
   position: absolute;
-width: 272px;
-height: 56px;
-left: 173px;
-top: 370px;
+  width: 272px;
+  height: 56px;
+  left: 173px;
+  top: 370px;
 
-  
-  background: #FF7E1B;
-  box-shadow: 0px 20px 50px -20px #FF7E1B;
+  border-color: transparent;
+  background: #ff7e1b;
+
   border-radius: 10px;
+}
+
+.cartButton:hover {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  background: solid #ff7e1b;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  transition: background 0.5s ease-in-out;
 }
 .cartText {
   /* Add to cart */
-
+  text-align: center;
   position: absolute;
   height: 16px;
   left: 27.73%;
@@ -117,21 +120,37 @@ top: 370px;
   bottom: 20.66%;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem 1rem;
+  place-items: center;
+}
+
+.innerContainer {
+  /* Group 2 */
+
+  position: absolute;
+  left: 56.18%;
+  right: 17.08%;
+  top: 91.31%;
+  bottom: 4.23%;
+}
+
 .price {
   position: absolute;
   height: 28px;
   left: 0%;
   right: 38.73%;
-  top: calc(50% - 28px/2 - 16px);
-  
+  top: calc(50% - 28px / 2 - 16px);
+
   font-family: Kumbh Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
   line-height: 28px;
-  
-  color: #1D2026;
-  
+
+  color: #1d2026;
 }
 .originalAmount {
   /* $250.00 */
@@ -140,7 +159,7 @@ top: 370px;
   height: 26px;
   left: 0%;
   right: 63.58%;
-  top: calc(50% - 26px / 2 + 21px);
+  top: 72%;
 
   font-family: Kumbh Sans;
   font-style: normal;
@@ -161,6 +180,7 @@ top: 370px;
   top: 5.88%;
   bottom: 54.41%;
   background-color: #ffeee2;
+  border-radius: 5px;
 }
 .percent {
   position: absolute;
@@ -199,22 +219,19 @@ top: 370px;
 
 .addSubContainer {
   position: absolute;
-left: 0%;
-right: 64.72%;
-top: 86.85%;
-bottom: 0%;
-
+  left: 0%;
+  right: 64.72%;
+  top: 86.85%;
+  bottom: 0%;
 }
 .removeIcon {
- color: #ffab6a;
+  color: #ffab6a;
 }
 .addIcon {
   color: #ffab6a;
 }
 
 .badgeContainer {
-  
-
   font-family: Kumbh Sans;
   font-style: normal;
   font-weight: bold;
@@ -225,7 +242,7 @@ bottom: 0%;
   text-align: center;
 
   color: #1d2026;
-  background-color: #F6F8FD;
+  background-color: #f6f8fd;
 }
 
 .card {
@@ -272,4 +289,162 @@ bottom: 0%;
   border: none;
   margin: 0.5rem;
   font-size: 1rem;
+}
+/******************* MEDIA QUERY **************************/
+@media (max-width: 670px) {
+}
+/* Tablets and under */
+@media (max-width: 768px) {
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .container {
+    position: absolute;
+    width: 375px;
+    height: 300px;
+    left: 0px;
+    top: 68px;
+  }
+  .companyBrand {
+    /* Sneaker Company */
+
+    position: absolute;
+    width: 327px;
+    height: 15px;
+    left: 24px;
+    top: 420px;
+
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    letter-spacing: 1.84615px;
+    text-transform: uppercase;
+
+    color: #ff7e1b;
+  }
+  .title {
+    position: absolute;
+    width: 327px;
+    height: 64px;
+    left: 24px;
+    top: 443px;
+
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    /* or 114% */
+
+    color: #1d2026;
+  }
+
+  .description {
+    /* These low-profile sn */
+
+    position: absolute;
+    width: 327px;
+    height: 100px;
+    left: 24px;
+    top: 522px;
+
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+
+    color: #69707d;
+  }
+  .containerAmounts {
+    /* These low-profile sn */
+
+    position: absolute;
+    width: 327px;
+    height: 100px;
+    left: 24px;
+    top: 562px;
+    padding-top: 24px;
+
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+
+    color: #69707d;
+  }
+  .price {
+    /* $125.00 */
+
+    position: absolute;
+    height: 28px;
+    left: 0%;
+    right: 67.48%;
+    top: 75px;
+
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+
+    color: #1d2026;
+  }
+  .percentContainer {
+    position: absolute;
+    left: 37.42%;
+    right: 46.93%;
+    top: 42px;
+    bottom: 8px;
+  }
+  .percent {
+    position: relative;
+    height: 20px;
+    left: 20.69%;
+
+    top: 15px;
+
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    color: #ff7e1b;
+  }
+  .originalAmount {
+    /* $250.00 */
+    position: absolute;
+    height: 26px;
+    left: 80.67%;
+    right: 0%;
+    top: 645px;
+
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    text-decoration-line: line-through;
+
+    color: #b6bcc8;
+  }
+  .cartButton {
+    position: absolute;
+    width: 327px;
+    height: 56px;
+    left: 30px;
+    top: 756px;
+  }
 }

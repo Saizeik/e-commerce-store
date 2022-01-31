@@ -1,9 +1,11 @@
 [
   {
-    "id": "prod_Ke1LQ3qKCNxUsm",
+    "id": 1,
     "title": "Fall Limited Edition Sneakers",
+    "category": "Women",
     "description": "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.",
     "image": "/src/components/image-product-1-thumbnail.jpg",
-    "price": 125.0
+    "price": 125.00
+    
   }
 ]

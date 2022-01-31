@@ -1,49 +1,49 @@
 import React from "react";
+
 import styles from "./main.module.css";
+
+import { addToCart } from "/redux/cart.slice.js";
+import { useDispatch } from "react-redux";
+import products from "./products.json";
+
 import WhiteCart from "./shoppingWCart.jsx";
-import Counters from "./counter.jsx";
-import products from "/products.json";
-
 const ShopPage = () => {
-  console.log("products", products);
+  const dispatch = useDispatch();
+
   return (
-    <>
-      <div class={styles.container}>
-        <div className={styles.companyBrand}>Sneaker Company</div>
-        {products.map((product) => {
-          const { id, title, description, price } = product;
+    <div className={styles.container}>
+      <div className={styles.companyBrand}>Sneaker Company</div>
+      <ul className={styles.grid}>
+        {products.map((item) => {
+          const { id, title, image, description, price } = item;
           return (
-            <>
-              <div key={id} className={styles.title}>
-                {title}{" "}
-              </div>
-
-              <div className={styles.description}>{description}</div>
-
+            <li key={id} className={styles.card}>
+              <h1 className={styles.title}>{title}</h1>
+              <h2 className={styles.description}>{description}</h2>
               <div className={styles.containerAmounts}>
-                <h1 className={styles.price}>
-                  ${price} {""}
-                </h1>
-
+                <h3 className={styles.price}>${price.toFixed(2)}</h3>
                 <div className={styles.percentContainer}>
-                  <h2 className={styles.percent}>50%</h2>
+                  <h2 className={styles.percent}>
+                    <strong>50%</strong>
+                  </h2>
                 </div>
-
-                <h3 className={styles.originalAmount}>$250.00</h3>
               </div>
-            </>
+
+              <h3 className={styles.originalAmount}>$250.00</h3>
+
+              <button
+                id="addToCart"
+                className={styles.cartButton}
+                onClick={() => dispatch(addToCart({ id, price }))}
+              >
+                <WhiteCart />
+                <h4 className={styles.cartText}> Add to Cart</h4>
+              </button>
+            </li>
           );
         })}
-
-        <div className={styles.addSubContainer}>
-          <Counters />
-        </div>
-        <button className={styles.cartButton}>
-          <div class={styles.cartText}>Add to Cart</div>
-          <WhiteCart />
-        </button>
-      </div>
-    </>
+      </ul>
+    </div>
   );
 };
 

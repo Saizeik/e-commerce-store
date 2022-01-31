@@ -1,32 +1,690 @@
-.navbar {
+.headerContainer {
   position: absolute;
-  width: 1110px;
+  width: 132px;
   height: 50px;
-  left: 165px;
-  top: 28px;
+  left: 45px;
+  top: 25px;
+  background: transparent;
+  align-items: center;
+}
+
+.sneakers {
+  /* sneakers 2 */
+
+  position: absolute;
+  width: 137.5px;
+  height: 20px;
+  left: 265px;
+
+  top: 20px;
+  position: absolute;
+}
+
+.modalTitle {
+  position: relative;
+  width: 397px;
+  height: 26px;
+  left: 359px;
+  top: 41px;
+}
+
+.collections {
+  transition: 0.3s ease;
+  position: relative;
+  width: 78px;
+  height: 26px;
+  left: 0%;
+  right: 80.35%;
+  top: calc(50% - 26px / 2);
+
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  /* identical to box height, or 173% */
+
+  color: #69707d;
+}
+
+.men {
+  /* Men */
+
+  position: absolute;
+  height: 26px;
+  left: 27.71%;
+  right: 64.23%;
+  top: calc(50% - 26px / 2);
+
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  /* identical to box height, or 173% */
+
+  color: #69707d;
+}
+
+.women {
+  /* Women */
+
+  position: absolute;
+  height: 26px;
+  left: 43.83%;
+  right: 41.81%;
+  top: calc(50% - 26px / 2);
+
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  /* identical to box height, or 173% */
+
+  color: #1d2026;
+}
+
+.about {
+  /* About */
+
+  position: absolute;
+  height: 26px;
+  left: 66.25%;
+  right: 22.42%;
+  top: calc(50% - 26px / 2);
+
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  /* identical to box height, or 173% */
+
+  color: #69707d;
+}
+
+.contact {
+  /* Contact */
+
+  position: absolute;
+  height: 26px;
+  left: 85.39%;
+  right: 0.5%;
+  top: calc(50% - 26px / 2);
+
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  /* identical to box height, or 173% */
+
+  color: #69707d;
 }
 
 .border {
   position: absolute;
   width: 1110px;
   height: 1px;
-  left: 165px;
-  top: 112px;
-
+  left: 265px;
+  top: 72px;
   background: #e4e9f2;
 }
+
 .shoppingCart {
-    position: absolute;
-    width: 21.82px;
-    height: 20px;
-    left: 1157px;
-    top: -10px;
+  position: absolute;
+  width: 21.82px;
+  height: 20px;
+  left: 1450px;
+
+  cursor: pointer;
+  border-color: transparent;
+  list-style: none;
+  top: calc(50% - 26px / 2);
 }
-.avatar{
+.btn {
+  outline: none;
+  border: none;
+  background: transparent;
+  color: transparent;
+}
+
+.shoppingCart:hover {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+}
+.avatar {
   position: absolute;
   width: 40px;
   height: 40px;
-  left: 1225px;
-  top: 0px;
-  
+  left: 1530px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.avatar:hover {
+  border-radius: 50%;
+  outline: 2px solid#FF7E1B;
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+}
+
+.cartModal {
+  /* Group 19 */
+  position: absolute;
+  width: 360px;
+  height: 256px;
+  left: 1300px;
+  top: 64px;
+
+  background: #ffffff;
+  box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
+  border-radius: 10px;
+}
+.content {
+  visibility: hidden;
+}
+.addToCartButtonContainer {
+  position: absolute;
+  width: 445px;
+  height: 56px;
+  left: 0px;
+  top: 370px;
+}
+
+.modalHeaderLine {
+  /* Rectangle */
+
+  position: absolute;
+  width: 1110px;
+  height: 1px;
+  left: 365px;
+  top: 112px;
+  border: transparent;
+
+  background: transparent;
+}
+
+.modalTitle {
+  /* Cart */
+
+  position: absolute;
+  height: 20px;
+  left: 6.67%;
+  right: 83.89%;
+  top: calc(50% - 20px / 2 - 94px);
+
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #1d2026;
+}
+.h1 {
+  /* Your cart is empty. */
+
+  position: absolute;
+  height: 26px;
+  left: 30.28%;
+  right: 30.28%;
+  top: calc(50% - 26px / 2 + 30px);
+
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+
+  color: #69707d;
+}
+
+.additionButton {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.subtractButton {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.removeIconModal {
+  background: white;
+  color: #ffab6a;
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  border-color: transparent;
+  transition: background 0.3s;
+}
+
+.removeIconModal:hover {
+  color: #ff7e1b;
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+}
+
+.addIconModal {
+  color: #ffab6a;
+  position: absolute;
+  left: 10%;
+  top: -25%;
+  border-color: transparent;
+  transition: background 0.3s;
+}
+
+.addIconModal:hover {
+  color: #ff7e1b;
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+}
+
+.quantityAndPrice {
+  /* $125.00 x 3 */
+
+  position: absolute;
+  width: 80px;
+  height: 26px;
+  left: 40%;
+  right: 62.62%;
+  bottom: -15%;
+
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  color: #69707d;
+}
+.product {
+  /* Fall Limited Edition */
+
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  width: 213px;
+  height: 26px;
+  left: 40%;
+  top: -20%;
+
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  color: #69707d;
+}
+
+.totalPrice {
+  /* $375.00 */
+
+  position: absolute;
+  width: 62px;
+  height: 26px;
+  left: 67%;
+  right: 28.97%;
+  bottom: -15%;
+
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  color: #1d2026;
+}
+
+.container {
+  padding: 2rem;
+  text-align: center;
+}
+.header {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.header div {
+  flex: 1;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  margin-bottom: 2rem;
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.body > * {
+  flex: 1;
+}
+.image {
+  width: 100px;
+  left: 15px;
+}
+.buttons > * {
+  width: 25px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+.trash {
+  /* Mask 2 */
+  border: outline none;
+  width: 14px;
+  height: 16px;
+  color: grey;
+  position: relative;
+  left: 100%;
+  top: 0%;
+  cursor: pointer;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.trash:hover {
+  color: black;
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+}
+.trashButton {
+  /* Mask 2 */
+
+  border: outline none;
+
+  width: 14px;
+  height: 16px;
+  color: white;
+  position: relative;
+  left: 106%;
+  top: 0%;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border-radius: 0.125em;
+  border-color: transparent;
+  transition: background 0.3s;
+}
+
+.cartContainer {
+  /* Group 18 */
+
+  position: absolute;
+  width: 312px;
+  height: 52px;
+  left: -55px;
+  top: 35px;
+}
+.modalDialog {
+  position: absolute;
+  width: 360px;
+  height: 256px;
+  left: 991px;
+  top: 94px;
+}
+
+.checkOut {
+  /* Rectangle */
+  width: 312px;
+  height: 56px;
+  border: outline none;
+  position: absolute;
+  justify-content: center;
+  left: -2%;
+  right: 2%;
+
+  top: 175%;
+  bottom: 0%;
+  color: white;
+  font-weight: bold;
+  background: #ff7e1b;
+  border-radius: 15px;
+  transition: background 0.3s;
+  border-color: transparent;
+}
+
+.checkOut:hover {
+  background: lime;
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.image {
+  position: absolute;
+  left: 18%;
+  right: 0%;
+  top: -20%;
+  bottom: 44.53%;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+}
+.badgeIcon {
+  justify-content: center;
+
+  position: absolute;
+  width: 19px;
+  height: 13px;
+  background: #ff7e1b;
+  border-radius: 5px;
+  left: 1465px;
+  top: -2px;
+}
+.cartCount {
+  color: white;
+  position: absolute;
+  height: 10px;
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+}
+/* Mobile */
+@media (max-width: 500px) {
+  .cartModal {
+    /* Group 15 */
+
+    position: absolute;
+    width: 360px;
+    height: 256px;
+    left: 14px;
+    top: 90px;
+  }
+
+  .image {
+    /* Rectangle */
+
+    position: absolute;
+    left: 21%;
+    right: 79.44%;
+    top: -7%;
+  }
+
+  .addIconModal {
+    color: #ffab6a;
+    position: absolute;
+    left: 85%;
+    top: 35%;
+    background: transparent;
+    border-color: transparent;
+    transition: background 0.3s;
+  }
+
+  .removeIconModal {
+    color: #ffab6a;
+    position: absolute;
+    left: 85%;
+    top: 75%;
+    outline: none;
+    background: transparent;
+    border-color: transparent;
+    transition: background 0.3s;
+  }
+  .checkOut {
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    top: 215.62%;
+    bottom: 12.5%;
+  }
+
+  .headerContainer {
+    position: absolute;
+    width: 327px;
+    height: 24px;
+    left: 24px;
+    top: 19px;
+    background: transparent;
+  }
+  .sneakers {
+    position: absolute;
+    width: 137.5px;
+    height: 20px;
+    left: 76px;
+    top: 0px;
+    background: transparent;
+
+    font-weight: bold;
+  }
+  .shoppingCart {
+    position: absolute;
+    width: 21.82px;
+    height: 20px;
+    left: 283px;
+    top: 15px;
+  }
+
+  .badgeIcon {
+    position: absolute;
+    width: 19px;
+    height: 13px;
+    left: 300px;
+    top: 0px;
+  }
+
+  .avatar {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 327px;
+    top: 19px;
+  }
+  .collections {
+    position: absolute;
+    height: 26px;
+    left: 0%;
+    right: 1.05%;
+    top: calc(50% - 26px / 2 - 92px);
+
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+    color: #1d2026;
+  }
+
+  .men {
+    /* Men */
+
+    position: absolute;
+    height: 26px;
+    left: 0%;
+    right: 60%;
+    top: calc(50% - 26px / 2 - 46px);
+
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+    color: #1d2026;
+  }
+
+  .women {
+    /* Women */
+
+    position: absolute;
+    height: 26px;
+    left: 0%;
+    right: 29.47%;
+    top: calc(50% - 26px / 2);
+
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+    color: #1d2026;
+  }
+
+  .about {
+    /* About */
+
+    position: absolute;
+    height: 26px;
+    left: 0%;
+    right: 43.16%;
+    top: calc(50% - 26px / 2 + 46px);
+
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+    color: #1d2026;
+  }
+
+  .contact {
+    /* Contact */
+
+    position: absolute;
+    height: 26px;
+    left: 0%;
+    right: 27.37%;
+    top: calc(50% - 26px / 2 + 92px);
+
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+    color: #1d2026;
+  }
 }
