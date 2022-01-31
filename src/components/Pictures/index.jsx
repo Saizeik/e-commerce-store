@@ -15,7 +15,7 @@ function Gallery() {
       <div className={styles.innerContainer}>
         <Carousel wrap="true" fade className={styles.carouselContainer}>
           <Carousel.Item id="carousel-thumb">
-            <Image 
+            <Image
               src={shoes}
               a
               href="./image-product-1.jpg"
@@ -63,70 +63,70 @@ function Gallery() {
             />
           </Carousel.Item>
         </Carousel>
-        <div className ={styles.thumbnailContainer}>
-        <div className="carousel-indicators">
-          <div className={styles.shoes}>
-            <div
-              className="carousel item"
-              data-target="#carousel-thumb"
-              data-bs-slide-to="0"
-              style={{ borderRadius: "10px", overflow: "hidden" }}
-            >
-              <Image
-                src={shoes}
-                className="d-block w-100"
-                width={88}
-                height={88}
-              />
+        <div className={styles.thumbnailContainer}>
+          <div className="carousel-indicators">
+            <div className={styles.shoes}>
+              <div
+                className="carousel item"
+                data-target="#carousel-thumb"
+                data-bs-slide-to="0"
+                style={{ borderRadius: "10px", overflow: "hidden" }}
+              >
+                <Image
+                  src={shoes}
+                  className="d-block w-100"
+                  width={88}
+                  height={88}
+                />
+              </div>
             </div>
-          </div>
-          <div className={styles.shoes2}>
-            <div
-              className="carousel item"
-              data-target="#carousel-thumb"
-              data-bs-slide-to="1"
-              style={{ borderRadius: "10px", overflow: "hidden" }}
-            >
-              <Image
-                src={shoes2}
-                className="d-block w-100"
-                width={88}
-                height={88}
-              />
-            </div>
+            <div className={styles.shoes2}>
+              <div
+                className="carousel item"
+                data-target="#carousel-thumb"
+                data-bs-slide-to="1"
+                style={{ borderRadius: "10px", overflow: "hidden" }}
+              >
+                <Image
+                  src={shoes2}
+                  className="d-block w-100"
+                  width={88}
+                  height={88}
+                />
+              </div>
             </div>
             <div className={styles.shoes3}>
-            <div
-              className="carousel item"
-              data-target="#carousel-thumb"
-              data-bs-slide-to="2"
-              style={{ borderRadius: "10px", overflow: "hidden" }}
-            >
-              <Image
-                src={shoes3}
-                className="d-block w-100"
-                width={88}
-                height={88}
-              />
+              <div
+                className="carousel item"
+                data-target="#carousel-thumb"
+                data-bs-slide-to="2"
+                style={{ borderRadius: "10px", overflow: "hidden" }}
+              >
+                <Image
+                  src={shoes3}
+                  className="d-block w-100"
+                  width={88}
+                  height={88}
+                />
+              </div>
             </div>
-            </div>
-          
-          <div className={styles.shoes4}>
-            <div
-              className="carousel item"
-              data-target="#carousel-thumb"
-              data-bs-slide-to="3"
-              style={{ borderRadius: "10px", overflow: "hidden" }}
-            >
-              <Image
-                src={shoes4}
-                className="d-block w-100"
-                width={88}
-                height={88}
-              />
+
+            <div className={styles.shoes4}>
+              <div
+                className="carousel item"
+                data-target="#carousel-thumb"
+                data-bs-slide-to="3"
+                style={{ borderRadius: "10px", overflow: "hidden" }}
+              >
+                <Image
+                  src={shoes4}
+                  className="d-block w-100"
+                  width={88}
+                  height={88}
+                />
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </>

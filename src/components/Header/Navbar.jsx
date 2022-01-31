@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-md navbar-light bg-light">
-      <div class="container-fluid">
+      <div className="container-fluid">
         <button
           className="navbar-toggler border-3 px-2"
           type="button"
@@ -49,19 +49,19 @@ const Navbar = () => {
           <CartModal />
 
           <div className={styles.avatar}>
-            <Image src={avatar} />
+            <Image src={avatar} alt="avatar profile picture" />
           </div>
         </div>
         <div
           className="offcanvas offcanvas-start-lg bg-white"
-          tabindex="-1"
+          tabIndex="-1"
           id="offcanvasExample"
           aria-labelledby="offcanvasExampleLabel"
         >
           <div className="offcanvas-body p-lg-0">
             <button
               type="button"
-              class="btn-close text-reset"
+              className="btn-close text-reset"
               data-bs-dismiss="offcanvas"
             ></button>
             <ul className="navbar-nav">

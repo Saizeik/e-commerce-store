@@ -79,7 +79,6 @@ const Box = () => {
 
 
 
-			// data should be an array of object
 			{data.map((item, index) => (
 			<>
 				<img
@@ -94,7 +93,7 @@ const Box = () => {
 			</>
 			))}
 			
-			//Component
+		
 			<Lightbox
 				state={toggle}
         event={lightBoxHandler}
