@@ -35,6 +35,7 @@ const CartModal = () => {
         <button
           className={styles.btn}
           type="button"
+          
           data-bs-toggle="modal"
           data-bs-target="#myModal"
           data-bs-keyboard="true"
@@ -48,13 +49,14 @@ const CartModal = () => {
         id="myModal"
         tabIndex="-1"
         aria-labelledby="myModalLabel"
-        aria-hidden="true"
+        
         className="modal fade"
+        aria-hidden="true"
         role="dialog"
       >
         <div className={styles.cartModal}>
           <div className="modal-dialog modal-sm">
-            <div className={styles.content}>
+            <div ClassName={styles.content}>
               <div className="modal-content border-0">
                 <h4 className="modal-title">Cart</h4>
 
@@ -68,62 +70,61 @@ const CartModal = () => {
                       <div className={styles.header}></div>
                       {cart.map((item) => (
                         <li key={item.price}>
-                          <div className={styles.cartContainer}>
-                            <div className={styles.image}>
-                              <Image
-                                src={Shoes}
-                                a
-                                href="/src/components/Pictures/image-product-1-thumbnail.jpg"
-                                height="50"
-                                width="50"
-                              />
-                            </div>
-                            <p className={styles.product}>
-                              {item.product}Fall Limited Edition Sneakers
-                            </p>
-                            <p className={styles.quantityAndPrice}>
-                              $ {item.price} x {item.quantity}{" "}
-                            </p>
-                            <p className={styles.totalPrice}>
-                              {" "}
-                              $ {getTotalPrice()}
-                            </p>{" "}
-                            <button
-                              className={styles.trashButton}
-                              onClick={() => dispatch(removeFromCart(item.id))}
-                            >
-                              <TrashCan
-                                type="button"
-                                className={styles.trash}
-                              ></TrashCan>
-                            </button>
-                            <div className={styles.addSubContainer}>
-                              <button
-                                className={styles.subtractButton}
-                                onClick={() =>
-                                  dispatch(decrementQuantity(item.id))
-                                }
-                              >
-                                {" "}
-                                <i className={styles.removeIconModal}>
-                                  <RemoveIcon fontSize="small" />
-                                </i>
-                              </button>
-                              <button
-                                className={styles.additionButton}
-                                onClick={() =>
-                                  dispatch(incrementQuantity(item.id))
-                                }
-                              >
-                                {" "}
-                                <i className={styles.addIconModal}>
-                                  <AddIcon fontSize="small" />
-                                </i>
-                              </button>
-                            </div>
+                        <div className={styles.cartContainer}>
+                          <div className={styles.image}>
+                            <Image
+                              src={Shoes}
+                              a
+                              href="/src/components/Pictures/image-product-1-thumbnail.jpg"
+                              height="50"
+                              width="50"
+                            />
                           </div>
-                        </li>
-                      ))}
+                          <p className={styles.product}>
+                            {item.product}Fall Limited Edition Sneakers
+                          </p>
+                          <p className={styles.quantityAndPrice}>
+                            $ {item.price} x {item.quantity}{" "}
+                          </p>
+                          <p className={styles.totalPrice}>
+                            {" "}
+                            $ {getTotalPrice()}
+                          </p>{" "}
+                          <button
+                            className={styles.trashButton}
+                            onClick={() => dispatch(removeFromCart(item.id))}
+                          >
+                            <TrashCan
+                              type="button"
+                              className={styles.trash}
+                            ></TrashCan>
+                          </button>
+                          <div className={styles.addSubContainer}>
+                            <button
+                              className={styles.subtractButton}
+                              onClick={() =>
+                                dispatch(decrementQuantity(item.id))
+                              }
+                            >
+                              {" "}
+                              <i className={styles.removeIconModal}>
+                                <RemoveIcon fontSize="small" />
+                              </i>
+                            </button>
+                            <button
+                              className={styles.additionButton}
+                              onClick={() =>
+                                dispatch(incrementQuantity(item.id))
+                              }
+                            >
+                              {" "}
+                              <i className={styles.addIconModal}>
+                                <AddIcon fontSize="small" />
+                              </i>
+                            </button>
+                          </div>
+                        </div>
+                      </li>))}
 
                       <button
                         onClick={() => {
