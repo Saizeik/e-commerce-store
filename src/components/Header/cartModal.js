@@ -56,7 +56,7 @@ const CartModal = () => {
       >
         <div className={styles.cartModal}>
           <div className="modal-dialog modal-sm">
-            <div ClassName={styles.content}>
+           
               <div className="modal-content border-0">
                 <h4 className="modal-title">Cart</h4>
 
@@ -140,7 +140,7 @@ const CartModal = () => {
                   )}
                 </div>
               </div>
-            </div>
+            
           </div>
         </div>
       </div>
