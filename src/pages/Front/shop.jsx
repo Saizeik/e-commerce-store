@@ -34,7 +34,7 @@ const ShopPage = () => {
               <button
                 id="addToCart"
                 className={styles.cartButton}
-                onClick={() => dispatch(addToCart({ id, price }))}
+                onClick={() => dispatch(addToCart({ id, price}))}
               >
                 <WhiteCart />
                 <h4 className={styles.cartText}> Add to Cart</h4>
