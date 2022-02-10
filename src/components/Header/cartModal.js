@@ -91,6 +91,7 @@ const CartModal = () => {
                               href="/src/components/Pictures/image-product-1-thumbnail.jpg"
                               height="50"
                               width="50"
+                              alt=" white and orange shoes thumbnail"
                             />
                           </div>
                           <p className={styles.product}>
@@ -141,7 +142,6 @@ const CartModal = () => {
                     ))}
 
                     <button
-                      className={styles.button}
                       onClick={() => {
                         initiateCheckout({
                           lineItems: [
