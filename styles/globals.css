@@ -105,6 +105,13 @@ a {
 .nav ul li a:hover {
   color: #555;
 }
+
+.d-block{
+  border-radius:10px;
+}
+#carousel-thumb{
+  border-radius:10px;
+}
 /******************* MEDIA QUERY **************************/
 @media (max-width: 670px) {
   .container {

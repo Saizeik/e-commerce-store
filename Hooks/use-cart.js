@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import products from "/products.json";
-import Counters from "/src/pages/Front/counter.jsx"
+
 
 /**
- * @lesson-10-solution Exercise 1
  * We can create a new function called useCart and export
  * it by default making it available for any file in our
  * app to import and use!
@@ -16,7 +15,6 @@ const defaultCart = {
 export default function useCart() {
 
   /**
-   * @lesson-10-solution Exercise 2
    * Because we added `use` to `useCart`, we can also take advantage
    * of useState straight from React to manage our cart state. Since
    * we also want to perform the same calculations everywhere like
@@ -45,7 +43,7 @@ export default function useCart() {
 
 
   /**
-   * @lesson-10-solution Exercise 3
+   
    * Just like our subtotal and quantity variables, we can return our addToCart
    * function giving us the ability to add a product to our shopping cart from
    * anywhere in the app.

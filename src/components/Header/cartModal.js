@@ -4,9 +4,10 @@ import RemoveIcon from "@material-ui/icons/Remove";
 import Image from "next/image";
 import TrashCan from "./trash.jsx";
 import Shoes from "/src/components/Pictures/image-product-1-thumbnail.jpg";
+import products from "/src/pages/Front/products.json";
 // Importing hooks from react-redux
 import { useSelector, useDispatch } from "react-redux";
-
+import { loadStripe } from "@stripe/stripe-js";
 import {
   incrementQuantity,
   decrementQuantity,
@@ -14,11 +15,26 @@ import {
 } from "/redux/cart.slice";
 
 import Cart from "./shoppingCart.jsx";
-import initiateCheckout from "/lib/payments.js";
 
 import styles from "./header.module.css";
 
 const CartModal = () => {
+  const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_API_KEY);
+  const { id, title, image, description, price } = products;
+
+  async function initiateCheckout({ lineItems } = {}) {
+    const stripe = await stripePromise;
+
+    await stripe.redirectToCheckout({
+      mode: "payment",
+      lineItems,
+      successUrl: `${window.location.origin}?session_id={CHECKOUT_SESSION_ID}`,
+      cancelUrl: window.location.origin,
+    });
+
+    console.log("Checkout!");
+  }
+
   // Extracting cart state from redux store
   const cart = useSelector((state) => state.cart);
 
@@ -35,7 +51,6 @@ const CartModal = () => {
         <button
           className={styles.btn}
           type="button"
-          
           data-bs-toggle="modal"
           data-bs-target="#myModal"
           data-bs-keyboard="true"
@@ -49,27 +64,25 @@ const CartModal = () => {
         id="myModal"
         tabIndex="-1"
         aria-labelledby="myModalLabel"
-        
         className="modal fade"
         aria-hidden="true"
         role="dialog"
       >
         <div className={styles.cartModal}>
           <div className="modal-dialog modal-sm">
-           
-              <div className="modal-content border-0">
-                <h4 className="modal-title">Cart</h4>
+            <div className="modal-content border-0">
+              <h4 className="modal-title">Cart</h4>
 
-                <div className={styles.modalHeaderLine}></div>
+              <div className={styles.modalHeaderLine}></div>
 
-                <div className="modal-body">
-                  {cart.length === 0 ? (
-                    <h1 className={styles.h1}>Your Cart is Empty.</h1>
-                  ) : (
-                    <>
-                      <div className={styles.header}></div>
-                      {cart.map((item) => (
-                        <li key={item.price}>
+              <div className="modal-body">
+                {cart.length === 0 ? (
+                  <h1 className={styles.h1}>Your Cart is Empty.</h1>
+                ) : (
+                  <>
+                    <div className={styles.header}></div>
+                    {cart.map((item) => (
+                      <li key={item.price}>
                         <div className={styles.cartContainer}>
                           <div className={styles.image}>
                             <Image
@@ -124,23 +137,29 @@ const CartModal = () => {
                             </button>
                           </div>
                         </div>
-                      </li>))}
+                      </li>
+                    ))}
 
-                      <button
-                        onClick={() => {
-                          initiateCheckout({
-                            lineItems: [{ item: price, quantity: 1 }],
-                          });
-                        }}
-                        className={styles.checkOut}
-                      >
-                        Checkout
-                      </button>
-                    </>
-                  )}
-                </div>
+                    <button
+                      className={styles.button}
+                      onClick={() => {
+                        initiateCheckout({
+                          lineItems: [
+                            {
+                              price: id,
+                              quantity: 1,
+                            },
+                          ],
+                        });
+                      }}
+                      className={styles.checkOut}
+                    >
+                      Checkout
+                    </button>
+                  </>
+                )}
               </div>
-            
+            </div>
           </div>
         </div>
       </div>
