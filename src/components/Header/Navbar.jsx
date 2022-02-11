@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <button
           className="navbar-toggler border-3 px-2"
@@ -38,8 +38,7 @@ const Navbar = () => {
         </div>
         <div className={styles.headerContainer}>
           <Link href="/cart">
-            <Badge className={styles.badgeIcon}  >
-            <a className="nav-link" aria-current="page" href="#" />
+            <Badge className={styles.badgeIcon}>
               <p id="cartCount" className={styles.cartCount}>
                 {" "}
                 {getItemsCount()}

@@ -22,11 +22,11 @@ const ShopPage = () => {
               <h2 className={styles.description}>{description}</h2>
               <div className={styles.containerAmounts}>
                 <h3 className={styles.price}>${price.toFixed(2)}</h3>
-                <div className={styles.percentContainer}>
+                <div className={styles.percentContainer}></div>
                   <h2 className={styles.percent}>
                     <strong>50%</strong>
                   </h2>
-                </div>
+                
               </div>
 
               <h3 className={styles.originalAmount}>$250.00</h3>

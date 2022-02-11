@@ -127,6 +127,15 @@
   top: 0%;
 }
 /******************* MEDIA QUERY **************************/
+
+@media (max-width: 1300px) {
+  .innerContainer {
+    position: absolute;
+    left: -400px;
+    top: -50px;
+  }
+}
+
 @media (max-width: 670px) {
   .innerContainer {
     width: 100%;
@@ -150,10 +159,14 @@
 /* Mobile */
 @media (max-width: 500px) {
   .innerContainer {
-    height: 110px;
-    width: 300px;
-    flex-direction: column;
+    position: absolute;
+    width: 375px;
+    height: 300px;
+    left: 0px;
+    top: 0px;
+    border-radius: 100%;
   }
+
   .carouselContainer {
     height: 110px;
     width: 300px;
@@ -168,7 +181,7 @@
     top: 68px;
     padding-top: 10px;
   }
-  .thumbnailContainer{
-    display:none;
+  .thumbnailContainer {
+    display: none;
   }
 }

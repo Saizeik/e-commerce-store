@@ -106,13 +106,30 @@ a {
   color: #555;
 }
 
-.d-block{
-  border-radius:10px;
+.d-block {
+  border-radius: 10px;
 }
-#carousel-thumb{
-  border-radius:10px;
+#carousel-thumb {
+  border-radius: 10px;
+}
+
+.py-3 {
+  position: relative;
+  top: -120px;
+  left: -1050px;
 }
 /******************* MEDIA QUERY **************************/
+@media (max-width: 1300px) {
+  .navbar {
+    position: relative;
+    left: -200px;
+  }
+
+  .py-3 {
+    position: relative;
+    left: -400px;
+  }
+}
 @media (max-width: 670px) {
   .container {
     width: 100%;
@@ -168,13 +185,42 @@ a {
 }
 
 /* Mobile */
+
 @media (max-width: 500px) {
+  .navbar-inner {
+    background: transparent;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+
+    top: 0;
+    left: 0;
+  }
+
+  .d-block {
+    border-radius: 0%;
+  }
+
+  .navbar {
+    position: absolute;
+    display: flex;
+    left: -20px;
+    top: 10px;
+
+    width: 100%;
+  }
+
   .navbar-brand {
     position: absolute;
     width: 137.5px;
     height: 20px;
-    left: 56px;
-    top: 20px;
+    left: 6px;
+    top: 0px;
 
     flex-direction: column;
 
@@ -184,7 +230,11 @@ a {
     margin: 0 auto;
     line-height: 3rem;
     font-weight: bold;
-    font-size:20px;
+  }
+
+  .navbar-toggler {
+    position: relative;
+    left: 10px;
   }
 
   .offcanvas {
@@ -233,22 +283,27 @@ a {
     background: #69707d;
   }
 
-  .modal-title{
+  .modal-title {
     /* Cart */
 
+    position: absolute;
+    height: 16px;
+    left: 6%;
+    right: 83.89%;
+    top: 0px;
 
-position: absolute;
-height: 16px;
-left: 6%;
-right: 83.89%;
-top: 0px;
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
 
-font-family: Kumbh Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 20px;
+    color: #1d2026;
+  }
 
-color: #1D2026;
+  .py-3 {
+    position: absolute;
+    left: 50px;
+    top: 170px;
   }
 }
