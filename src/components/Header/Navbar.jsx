@@ -38,7 +38,8 @@ const Navbar = () => {
         </div>
         <div className={styles.headerContainer}>
           <Link href="/cart">
-            <Badge className={styles.badgeIcon}>
+            <Badge className={styles.badgeIcon}  >
+            <a className="nav-link" aria-current="page" href="#" />
               <p id="cartCount" className={styles.cartCount}>
                 {" "}
                 {getItemsCount()}

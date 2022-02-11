@@ -27,12 +27,13 @@ const CartModal = () => {
 
     await stripe.redirectToCheckout({
       mode: "payment",
-      lineItems:[{
-        price: `price_1JyjIsIoOTtZbogrPOgxMuVB`,
-        quantity: 1,    
-      },],
-       
-      
+      lineItems: [
+        {
+          price: `price_1JyjIsIoOTtZbogrPOgxMuVB`,
+          quantity: 1,
+        },
+      ],
+
       successUrl: `${window.location.origin}?session_id={CHECKOUT_SESSION_ID}`,
       cancelUrl: window.location.origin,
     });
