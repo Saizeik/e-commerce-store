@@ -19,7 +19,7 @@ import Cart from "./shoppingCart.jsx";
 import styles from "./header.module.css";
 
 const CartModal = () => {
-  const stripePromise = loadStripe(process.env.SNEAKERS_PUBLIC_STRIPE_API_KEY);
+  const stripePromise = loadStripe(`${process.env.NEXT_PUBLIC_STRIPE_API_KEY}`);
   const { id, title, image, description, price } = products;
 
   async function initiateCheckout({ lineItems } = {}) {
@@ -27,7 +27,12 @@ const CartModal = () => {
 
     await stripe.redirectToCheckout({
       mode: "payment",
-      lineItems,
+      lineItems:[{
+        price: `price_1JyjIsIoOTtZbogrPOgxMuVB`,
+        quantity: 1,    
+      },],
+       
+      
       successUrl: `${window.location.origin}?session_id={CHECKOUT_SESSION_ID}`,
       cancelUrl: window.location.origin,
     });
