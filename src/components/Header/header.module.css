@@ -6,6 +6,7 @@
   top: 25px;
   background: transparent;
   align-items: center;
+  z-index: -1;
 }
 
 .sneakers {
@@ -132,16 +133,25 @@
   background: #e4e9f2;
 }
 
-.shoppingCart {
+.cartAndAvatarContainer {
   position: absolute;
+  left: 1500px;
+  max-width: 100px;
+  max-height: 50px;
+  top: 20px;
+}
+
+.shoppingCart {
+  position: relative;
   width: 21.82px;
   height: 20px;
-  left: 1450px;
+  left: 0px;
+  top: -15px;
 
   cursor: pointer;
   border-color: transparent;
   list-style: none;
-  top: calc(50% - 26px / 2);
+  
 }
 .btn {
   outline: none;
@@ -155,11 +165,13 @@
   transform: translateY(-1px);
 }
 .avatar {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 1530px;
-  top: 0px;
+  position: relative;
+  max-width: 40px;
+  max-height: 40px;
+  left: 60px;
+  top:-45px;
+  z-index:2;
+
   cursor: pointer;
 }
 
@@ -487,13 +499,13 @@
 .badgeIcon {
   justify-content: center;
 
-  position: absolute;
+  position: relative;
   width: 19px;
   height: 13px;
   background: #ff7e1b;
   border-radius: 5px;
-  left: 1465px;
-  top: -2px;
+  left: 12px;
+  top: -8px;
 }
 .cartCount {
   color: white;
@@ -519,12 +531,6 @@
 
 /* Mobile */
 @media (max-width: 500px) {
-  .headerContainer {
-    position: absolute;
-    left: 35px;
-    top: 0px;
-  }
-
   .border {
     display: none;
   }
@@ -586,29 +592,26 @@
 
     font-weight: bold;
   }
-  .shoppingCart {
-    position: absolute;
-    width: 21.82px;
-    height: 20px;
-    left: 283px;
-    top: 15px;
+
+  .cartAndAvatarContainer{
+    position:absolute;
+    left:300px;
+    max-height:100px;
+    max-width:100px;
+    top:10px;
+
+
   }
 
-  .badgeIcon {
-    position: absolute;
-    width: 19px;
-    height: 13px;
-    left: 300px;
-    top: 0px;
-  }
+ .avatar{
+   position:fixed;
+   left:340px;
+   top:18px;
+   
+ }
 
-  .avatar {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    left: 327px;
-    top: -10px;
-  }
+
+  
   .collections {
     position: absolute;
     height: 26px;

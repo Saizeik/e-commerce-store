@@ -36,7 +36,7 @@ const Navbar = () => {
             <strong>sneakers</strong>
           </a>
         </div>
-        <div className={styles.headerContainer}>
+        <div className={styles.cartAndAvatarContainer}>
           <Link href="/cart">
             <Badge className={styles.badgeIcon}>
               <p id="cartCount" className={styles.cartCount}>
